@@ -1,0 +1,173 @@
+<!--
+Autore   :  MICHAEL FRANCONIERI
+Nome Sito: Ristorante
+Versione : 1.0
+-->
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trattoria Da Mario - Ristorante Italiano</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container">
+            <h1 class="logo">🍕 Trattoria Da Mario</h1>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#contatti">Contatti</a></li>
+            </ul>
+            <button class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Benvenuti alla Trattoria Da Mario</h1>
+            <p>Cucina italiana tradizionale dal 1990</p>
+            <a href="#menu" class="btn">Scopri il Menu</a>
+        </div>
+    </section>
+
+    <!-- Menu -->
+    <section id="menu" class="menu">
+        <div class="container">
+            <h2>Il Nostro Menu</h2>
+            
+            <!-- Antipasti -->
+            <div class="menu-category">
+                <h3>🥗 Antipasti</h3>
+                <div class="menu-items">
+                    <div class="menu-item">
+                        <h4>Bruschetta al Pomodoro</h4>
+                        <p>Pane tostato con pomodori freschi</p>
+                        <span class="price">€5.00</span>
+                    </div>
+                    <div class="menu-item">
+                        <h4>Prosciutto e Mozzarella</h4>
+                        <p>Prosciutto crudo con mozzarella di bufala</p>
+                        <span class="price">€8.00</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Primi -->
+            <div class="menu-category">
+                <h3>🍝 Primi Piatti</h3>
+                <div class="menu-items">
+                    <div class="menu-item">
+                        <h4>Spaghetti alla Carbonara</h4>
+                        <p>Ricetta tradizionale romana</p>
+                        <span class="price">€12.00</span>
+                    </div>
+                    <div class="menu-item">
+                        <h4>Penne all'Arrabbiata</h4>
+                        <p>Pomodoro e peperoncino</p>
+                        <span class="price">€10.00</span>
+                    </div>
+                    <div class="menu-item">
+                        <h4>Lasagne alla Bolognese</h4>
+                        <p>Fatte in casa</p>
+                        <span class="price">€11.00</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Secondi -->
+            <div class="menu-category">
+                <h3>🍖 Secondi Piatti</h3>
+                <div class="menu-items">
+                    <div class="menu-item">
+                        <h4>Bistecca alla Fiorentina</h4>
+                        <p>Carne alla griglia (800g)</p>
+                        <span class="price">€25.00</span>
+                    </div>
+                    <div class="menu-item">
+                        <h4>Pollo Arrosto</h4>
+                        <p>Con patate al forno</p>
+                        <span class="price">€14.00</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Dolci -->
+            <div class="menu-category">
+                <h3>🍰 Dolci</h3>
+                <div class="menu-items">
+                    <div class="menu-item">
+                        <h4>Tiramisù</h4>
+                        <p>Il classico dolce italiano</p>
+                        <span class="price">€6.00</span>
+                    </div>
+                    <div class="menu-item">
+                        <h4>Panna Cotta</h4>
+                        <p>Con frutti di bosco</p>
+                        <span class="price">€5.00</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contatti -->
+    <section id="contatti" class="contatti">
+        <div class="container">
+            <h2>Contattaci</h2>
+            
+            <div class="contatti-grid">
+                <!-- Info -->
+                <div class="contatti-info">
+                    <div class="info-box">
+                        <h3>📍 Dove Siamo</h3>
+                        <p>Via Roma 123<br>16100 Genova, Italia</p>
+                    </div>
+                    <div class="info-box">
+                        <h3>📞 Telefono</h3>
+                        <p>+39 010 1234567</p>
+                    </div>
+                    <div class="info-box">
+                        <h3>⏰ Orari</h3>
+                        <p>Lun-Dom: 12:00-15:00<br>19:00-23:00</p>
+                    </div>
+                </div>
+
+                <!-- Form Prenotazione -->
+                <div class="prenotazione">
+                    <h3>Prenota un Tavolo</h3>
+                    <form id="prenotaForm">
+                        <input type="text" placeholder="Nome" required>
+                        <input type="email" placeholder="Email" required>
+                        <input type="tel" placeholder="Telefono" required>
+                        <input type="date" required>
+                        <select required>
+                            <option value="">Numero persone</option>
+                            <option value="2">2 persone</option>
+                            <option value="4">4 persone</option>
+                            <option value="6">6 persone</option>
+                        </select>
+                        <button type="submit" class="btn">Prenota</button>
+                    </form>
+                    <p id="messaggio" class="messaggio-conferma"></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2026 Trattoria Da Mario - Genova, Italia</p>
+        <p>Sito realizzato da Michael Franconieri</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
